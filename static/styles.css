@@ -1,0 +1,58 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+
+.c {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.g {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    flex: 1 1 100px;
+    padding: 20px 50px;
+    height: 100%;
+    max-height: 33.333333333333%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.g-1 {flex-basis: 100px;}
+.g-2 {flex-basis: 200px;}
+.g-3 {flex-basis: 300px;}
+.g-4 {flex-basis: 400px;}
+.g-5 {flex-basis: 500px;}
+.g-6 {flex-basis: 600px;}
+
+.i {
+    display: block;
+    max-width: 375px;
+    max-height: 100%;
+    flex: 1 0 100px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ini {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}

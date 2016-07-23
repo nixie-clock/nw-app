@@ -1,0 +1,30 @@
+{
+  "name": "nixie-clock",
+  "version": "0.1.0",
+  "description": "Crossplatform Nixie Clock screensaver",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "build": "rm -rf app/ && exec coffee -b -c -o app/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nixie-clock/electron.git"
+  },
+  "author": "Nick Iv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nixie-clock/electron/issues"
+  },
+  "homepage": "https://github.com/nixie-clock/electron#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "electron": "^0.4.1",
+    "electron-packager": "^7.3.0",
+    "electron-prebuilt": "^1.2.8"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "underscore": "^1.8.3"
+  }
+}
